@@ -12,3 +12,5 @@ In the case of this reproduction, I think that `apps/app/.eslintrc.json` should 
 ```
 
 If this is added, the `cy.wait` that I've added to `app/src/app/app.component.cy.ts` will be properly flagged as incorrect according to the recommended cypress ruleset.
+
+I'm not certain that the above is 100% inclusive of everything that should technically be overseen by the `cypress/recommended` ruleset (i.e. `app/cypress/**/*.ts`) but wanted to at least create a minimum viable reproduction.
